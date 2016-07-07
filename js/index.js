@@ -71,7 +71,7 @@ function setAsActive(id)
 	//method 2
 	$('#main_container').css('opacity', '0');
 	$("#main_container").load(fileName, function(){
-		$("#main_container").animate({ opacity: 1 }, 200);
+		$("#main_container").velocity({ opacity: 1 }, 200);
 		// $("#main_container").css("height","auto");
 		// //if it is the project tab, click first to load it
 		if(fileName === 'projects.html')
