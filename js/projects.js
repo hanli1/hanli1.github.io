@@ -9,17 +9,15 @@ $('body').on('click', 'a.project-item', function() {
 function clearActives()
 {
   $('#project-collection').children('a').each(function () {
-    $(this).removeClass("light-blue");
-    $(this).removeClass("darken-3");
+    $(this).removeClass("green");
     $(this).removeClass("white-text");
-    $(this).addClass("light-blue-text");
+    $(this).addClass("green-text");
   });
 }
 
 function activate(name)
 {
-  $(name).addClass("light-blue");
-  $(name).addClass("darken-3");
+  $(name).addClass("green");
   $(name).addClass("white-text");
 
   //strip the # fom the id

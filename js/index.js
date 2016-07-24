@@ -5,6 +5,9 @@ $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	loadSideBarDynamically();
 	$('.scrollspy').scrollSpy();
+	$('.parallax').parallax();
+
+
 	$('#doorlock')[0].click();
 	// $("html,body").animate({scrollTop: 0}, 1000);
 });
@@ -108,4 +111,20 @@ function setAsActive(id)
 	// 		}
 	// 	});
 	// });
+}
+
+$('#send').click(function(){
+	launchEmail();
+});
+
+function launchEmail()
+{
+	var url = "mailto:dragon1357531@gmail.com?subject=";
+	url+= $("#subject").val().replace(" ", "+");
+	url+= "&body="
+	url+= $("#message").val().replace(" ", "+");
+	window.open(
+		url,
+          '_blank' // <- This is what makes it open in a new window.
+          );
 }

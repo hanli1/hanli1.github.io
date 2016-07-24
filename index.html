@@ -11,7 +11,7 @@
 <title>Han Li</title>
 <head>
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/libs/materialize.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="css/index.css"/>
@@ -22,7 +22,7 @@
 
 <body>
 	<!-- Loading screen -->
-	<div id="cover" class="valign-wrapper">
+	<div id="cover" class="valign-wrapper green">
 		<div style="margin: 0 auto;"> <!-- center horizontally the loader -->
 			<div class="preloader-wrapper active valign">
 				<div class="spinner-layer spinner-red-only custom-white-spinner">
@@ -51,27 +51,31 @@
 	
 	<main>
 
-		<div class="top-section"> <!-- screen-section, to expand to fill-->
-			<header>
-				<div class="navbar-fixed">
-					<nav class="z-depth-0"> <!--light-blue darken-4-->
-						<div class="nav-wrapper" style="padding-left:20px;">
-							<a href="#!" class="brand-logo my-logo white-text">Han Li</a>
-							<a href="#" data-activates="sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
-							<ul class="right hide-on-med-and-down" id="tabs">
-								<!-- a href must have default color for side bar to be properly black -->
-								<li id="about-tab" class="waves-effect"><a href="#about">About</a></li>
-								<li id="education-tab" class="waves-effect"><a href="#education">Education</a></li>
-								<li id="experience-tab" class="waves-effect"><a href="#experience">Experience</a></li>
-								<li id="projects-tab" class="waves-effect"><a href="#projects">Projects</a></li>
-								<li id="contact-tab" class="waves-effect"><a href="#contact">Contact</a></li>
-							</ul>
-							<ul class="side-nav" id="sidebar" style="padding-left:0px;">
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</header>
+		
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="../img/night-city.jpg"></div>
+			<div class="top-section"> <!-- screen-section, to expand to fill-->
+				<header>
+					<div class="navbar-fixed">
+						<nav class="z-depth-0"> <!--light-blue darken-4-->
+							<div class="nav-wrapper" style="padding-left:20px;">
+								<a href="#!" class="brand-logo my-logo white-text">Han Li</a>
+								<a href="#" data-activates="sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
+								<ul class="right hide-on-med-and-down" id="tabs">
+									<!-- a href must have default color for side bar to be properly black -->
+									<li id="about-tab" class="waves-effect"><a href="#about">About</a></li>
+									<li id="education-tab" class="waves-effect"><a href="#education">Education</a></li>
+									<li id="experience-tab" class="waves-effect"><a href="#experience">Experience</a></li>
+									<li id="projects-tab" class="waves-effect"><a href="#projects">Projects</a></li>
+									<li id="contact-tab" class="waves-effect"><a href="#contact">Contact</a></li>
+								</ul>
+								<ul class="side-nav" id="sidebar" style="padding-left:0px;">
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</header>
 			<!-- <div style="margin-top: 20px;">
 				spacer between navigation bar and main sections
 			</div> -->
@@ -94,239 +98,224 @@
 				</div>
 			</div>
 		</div>
-
-		<div id="education" class="section-2 screen-section valign-wrapper scrollspy">
-			<div class="container valign">
-				<div class="row">
-					<div class="col s12 m6">
-						<div class="cl s12 m6">
-							<div class="card medium">
-								<div class="card-image">
-									<img id="cornell" src="img/cornell.jpg">
-									<span class="card-title"></span>
-								</div>
-								<div class="card-content">
-									<p>Class of 2018, Bachelor of Science</p>
-									<p>I'm currently a sophomore at <a class="school-link" href="https://www.cornell.edu/" target="_blank">Cornell University</a> studying Electrical and Computer Engineering
-										with a double major in Computer Science.</p>
-									</div>
-								</div>
-							</div>
-							<div class="card medium">
-								<div class="card-image">
-									<img id="west" src="img/planowest.jpg">
-									<span class="card-title"></span>
-								</div>
-								<div class="card-content">
-									<p>Class of 2014, High School Diploma</p>
-									<p>Previously I studied at <a class="school-link" href="http://k-12.pisd.edu/schools/pwsh/" target="_blank">Plano West Senior High School</a> in Plano, TX.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="card">
-								<div class="card-content">
-									<span class="card-title black-text">Relevant Coursework (CS)</span>
-									<ul>
-										<li>CS 2112 - Honors Object Oriented Programming</li>
-										<li>CS 2043 - Unix Scripting and Tools</li>
-										<li>CS 2800 - Discrete Structures</li>
-										<li>CS 4820 - Introduction to Algorithms</li>
-									</ul>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-content">
-									<span class="card-title black-text">Relevant Coursework (ECE)</span>
-									<ul>
-										<li>ECE 1820 - Introduction to Nanofabrication</li>
-										<li>ECE 2100 - Introduction to Circuits</li>
-										<li>ECE 2200 - Signals and Systems</li>
-										<li>ECE 2300 - Digital Logic and Computer Organization (TA)</li>
-										<li>ECE 3100 - Probability and Statistics</li>
-										<li>ECE 3140 - Embedded Systems</li>
-										<li>ECE 3150 - Introduction to Microelectronics</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="experience" class="section-3 screen-section valign-wrapper scrollspy">
-			<div  class="container valign">
-				<div class="row">
-					<div class="col s12 m8">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">ECE 2300 Digital Logic and Computer Organization</span>
-								<p>Undergraduate Teaching Assistant</p>
-								<p style="text-align:left;">
-									January 2016 - Present
-									<span style="float:right;">Ithaca, New York</span>
-								</p>
-								<ul>
-									<li>Held office hours, conducted grading sessions, and assisted students in the Digital Logic and Computer Organization course focusing on a ground up approach from transistors and Boolean logic to microprocessor design using 5 stage, pipelined MIPS processor as a model. </li>
-								</ul>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">P1 Analytics</span>
-								<p>Software Developer Intern</p>
-								<p style="text-align:left;">
-									June 2015 - August 2015
-									<span style="float:right;">Miami, Florida</span>
-								</p>
-								<ul>
-									<li>Developed frontend Android application Stocli by integrating with backend using HTTP requests while focusing on Material Design</li>
-									<li>Deployed MySQL database and wrote PHP scripts in the backend for custom features including user lists.</li>
-									<li>Frontend web design for OutResearch website using HTML5, Javascript, and CSS. </li>
-								</ul>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">Intel-Cornell Cup</span>
-								<p>Computer Science Team Member</p>
-								<p style="text-align:left;">
-									September 2014 - Present
-									<span style="float:right;">Ithaca, New York</span>
-								</p>
-								<ul>
-									<li>Developed rollercoaster simulation using C# in Unity3D.</li>
-									<li>Development of crucial professional design skills within a strong full systems multi- disciplinary approach.</li>
-									<li>Leading group team chosen to create and develop innovative embedded systems national competition.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m4">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">Languages</span>
-								<ul>
-									<li>Java</li>
-									
-									<object data="img/java.svg" type="image/svg+xml"></object>
-									<li>C#</li>
-									<li>Python</li>
-								</ul>
-								<p>Familiar with</p>
-								<ul>
-									<li>C</li>
-									<li>Matlab</li>
-									<li>HTML</li>
-									<li>Javascript</li>
-									<li>CSS</li>
-									<li>Verilog</li>
-									<li>C++</li>
-									<li>PHP</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m4">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">Technologies</span>
-								<ul>
-									<li>Eclipse</li>
-									<li>Android Studio</li>
-									<li>MySQL</li>
-									<li>Arduino</li>
-									<li>XML</li>
-									<li>JSON</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>  
-		</div>
-
-
-		<div id="projects" class="section-4 screen-section valign-wrapper scrollspy">
-			<div class="container valign">
-				<div class="row">
-					<div class="col s12 m4">
-						<div class="z-depth-1">
-							<div id="project-collection" class="collection">
-								<a id="doorlock" href="#Password-protected Doorlock" class="project-item collection-item light-blue darken-3 white-text">Password-protected Doorlock</a>
-								<a id="mips" href="#MIPS Microprocessor" class="project-item collection-item light-blue-text">MIPS Microprocessor</a>
-								<a id="shazam" href="#Shazam" class="project-item collection-item light-blue-text">Shazam</a>
-								<a id="colorlens" href="#Color Lens" class="project-item collection-item light-blue-text">Color Lens</a>
-								<a id="yourpisd" href="#yourPISD" class="project-item collection-item light-blue-text">yourPISD</a>
-							</div>
-						</div>
-					</div>
-					<div id="project-display-container" class="col s12 m8" style="height: 500px; display: block;">
-					</div>
-				</div> 
-			</div>
-		</div>    
-
-		<!-- CONTACTS-->
-
-		<div id="contact" class="section-5 screen-section valign-wrapper scrollspy">
-			<div class="container valign">
-				<div class="row">
-					<div class="col s12 m10 offset-m1">
-						<div class="card">
-							<div class="card-content">
-								<p>Feel free to send me an email for more information or check out some of the links below!</p>
-								<form>
-									<div class="row">
-										<div class="input-field col s12">
-											<input id="subject" type="text" class="validate"></input>
-											<label for="subject">Subject</label>
-										</div>
-									</div>
-									<div class="row">
-										<div class="input-field col s12">
-											<textarea id="message" class="materialize-textarea"></textarea>
-											<label for="message">Message</label>
-										</div>
-									</div>
-								</form>
-								<button class="btn-large waves-effect waves-light green darken-1" type="submit" name="action"
-								id="send">Send
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>    
-		</div>
-
-		
 	</div>
 
-	<script>
-	$('#send').click(function(){
-		launchEmail();
-	});
-	function launchEmail()
-	{
-		var url = "mailto:dragon1357531@gmail.com?subject=";
-		url+= $("#subject").val().replace(" ", "+");
-		url+= "&body="
-		url+= $("#message").val().replace(" ", "+");
-		window.open(
-			url,
-          '_blank' // <- This is what makes it open in a new window.
-          );
-	}
-	</script>    
+
+	<div id="education" class="section-2 screen-section valign-wrapper scrollspy">
+		<div class="container valign">
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="cl s12 m6">
+						<div class="card medium">
+							<div class="card-image">
+								<img id="cornell" src="img/cornell.jpg">
+								<span class="card-title"></span>
+							</div>
+							<div class="card-content">
+								<p>Class of 2018, Bachelor of Science</p>
+								<p>I'm currently a sophomore at <a class="school-link" href="https://www.cornell.edu/" target="_blank">Cornell University</a> studying Electrical and Computer Engineering
+									with a double major in Computer Science.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card medium">
+							<div class="card-image">
+								<img id="west" src="img/planowest.jpg">
+								<span class="card-title"></span>
+							</div>
+							<div class="card-content">
+								<p>Class of 2014, High School Diploma</p>
+								<p>Previously I studied at <a class="school-link" href="http://k-12.pisd.edu/schools/pwsh/" target="_blank">Plano West Senior High School</a> in Plano, TX.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col s12 m6">
+						<div class="card">
+							<div class="card-content">
+								<span class="card-title black-text">Relevant Coursework (CS)</span>
+								<ul>
+									<li>CS 2112 - Honors Object Oriented Programming</li>
+									<li>CS 2043 - Unix Scripting and Tools</li>
+									<li>CS 2800 - Discrete Structures</li>
+									<li>CS 4820 - Introduction to Algorithms</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<span class="card-title black-text">Relevant Coursework (ECE)</span>
+								<ul>
+									<li>ECE 1820 - Introduction to Nanofabrication</li>
+									<li>ECE 2100 - Introduction to Circuits</li>
+									<li>ECE 2200 - Signals and Systems</li>
+									<li>ECE 2300 - Digital Logic and Computer Organization (TA)</li>
+									<li>ECE 3100 - Probability and Statistics</li>
+									<li>ECE 3140 - Embedded Systems</li>
+									<li>ECE 3150 - Introduction to Microelectronics</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="experience" class="section-3 screen-section valign-wrapper scrollspy">
+		<div  class="container valign">
+			<div class="row">
+				<div class="col s12 m8">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">ECE 2300 Digital Logic and Computer Organization</span>
+							<p>Undergraduate Teaching Assistant</p>
+							<p style="text-align:left;">
+								January 2016 - Present
+								<span style="float:right;">Ithaca, New York</span>
+							</p>
+							<ul>
+								<li>Held office hours, conducted grading sessions, and assisted students in the Digital Logic and Computer Organization course focusing on a ground up approach from transistors and Boolean logic to microprocessor design using 5 stage, pipelined MIPS processor as a model. </li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">P1 Analytics</span>
+							<p>Software Developer Intern</p>
+							<p style="text-align:left;">
+								June 2015 - August 2015
+								<span style="float:right;">Miami, Florida</span>
+							</p>
+							<ul>
+								<li>Developed frontend Android application Stocli by integrating with backend using HTTP requests while focusing on Material Design</li>
+								<li>Deployed MySQL database and wrote PHP scripts in the backend for custom features including user lists.</li>
+								<li>Frontend web design for OutResearch website using HTML5, Javascript, and CSS. </li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">Intel-Cornell Cup</span>
+							<p>Computer Science Team Member</p>
+							<p style="text-align:left;">
+								September 2014 - Present
+								<span style="float:right;">Ithaca, New York</span>
+							</p>
+							<ul>
+								<li>Developed rollercoaster simulation using C# in Unity3D.</li>
+								<li>Development of crucial professional design skills within a strong full systems multi- disciplinary approach.</li>
+								<li>Leading group team chosen to create and develop innovative embedded systems national competition.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">Languages</span>
+							<ul>
+								<li>Java</li>
+
+								<object data="img/java.svg" type="image/svg+xml"></object>
+								<li>C#</li>
+								<li>Python</li>
+							</ul>
+							<p>Familiar with</p>
+							<ul>
+								<li>C</li>
+								<li>Matlab</li>
+								<li>HTML</li>
+								<li>Javascript</li>
+								<li>CSS</li>
+								<li>Verilog</li>
+								<li>C++</li>
+								<li>PHP</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">Technologies</span>
+							<ul>
+								<li>Eclipse</li>
+								<li>Android Studio</li>
+								<li>MySQL</li>
+								<li>Arduino</li>
+								<li>XML</li>
+								<li>JSON</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
+	</div>
+
+
+	<div id="projects" class="section-4 screen-section valign-wrapper scrollspy">
+		<div class="container valign">
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="z-depth-1">
+						<div id="project-collection" class="collection">
+							<a id="doorlock" href="#Password-protected Doorlock" class="project-item collection-item green white-text">Password-protected Doorlock</a>
+							<a id="mips" href="#MIPS Microprocessor" class="project-item collection-item green-text">MIPS Microprocessor</a>
+							<a id="shazam" href="#Shazam" class="project-item collection-item green-text">Shazam</a>
+							<a id="colorlens" href="#Color Lens" class="project-item collection-item green-text">Color Lens</a>
+							<a id="yourpisd" href="#yourPISD" class="project-item collection-item green-text">yourPISD</a>
+						</div>
+					</div>
+				</div>
+				<div id="project-display-container" class="col s12 m8" style="height: 500px; display: block;">
+				</div>
+			</div> 
+		</div>
+	</div>    
+
+	<!-- CONTACTS-->
+
+	<div id="contact" class="section-5 screen-section valign-wrapper scrollspy">
+		<div class="container valign">
+			<div class="row">
+				<div class="col s12 m10 offset-m1">
+					<div class="card">
+						<div class="card-content">
+							<p>Feel free to send me an email or check out some of the links!</p>
+							<form>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="subject" type="text" class="validate"></input>
+										<label for="subject">Subject</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="message" class="materialize-textarea"></textarea>
+										<label for="message">Message</label>
+									</div>
+								</div>
+							</form>
+							<button class="btn-large waves-effect waves-light green" type="submit" name="action"
+							id="send">Send
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>    
+	</div>
+
+
+</div>
 
 </main>
 
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/libs/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/projects.js"></script>
-<script type="text/javascript" src="js/velocity.min.js"></script>
+<script type="text/javascript" src="js/libs/velocity.min.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -336,6 +325,9 @@
 ga('create', 'UA-77465014-1', 'auto');
 ga('send', 'pageview');
 
+</script>
+<script>
+javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
 </script>
 </body>
 </html>
