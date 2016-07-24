@@ -10,7 +10,12 @@ a.anchor{
 	visibility: hidden;
 }
 html { 
-    
+    background: url("../img/night-city.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
 }
 
 nav{
@@ -184,13 +189,25 @@ ul li{
 }
 
 .top-section{
-    background: url("http://sinaiapplab.businesscatalyst.com/img/background/video_bg.jpg") no-repeat center;
-    background-size: cover;
-    -webkit-background-size:  cover;
-    -moz-background-size:  cover;
-    -o-background-size:  cover;
+    
 }
 .screen-section{
 	width: 100%;
 	min-height: 100%;
+}
+
+.section-1{
+	background-color: #FAFAFA;
+}
+.section-2{
+	background-color: #F2F2F2;
+}
+.section-3{
+	background-color: #EBEBEB;
+}
+.section-4{
+	background-color: #E3E3E3;
+}
+.section-5{
+	background-color: #DBDBDB;
 }
