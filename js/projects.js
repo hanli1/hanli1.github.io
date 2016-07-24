@@ -2,7 +2,7 @@
 $('body').on('click', 'a.project-item', function() {
     clearActives();
     activate('#'+this.id);
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 });
 
 

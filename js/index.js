@@ -1,10 +1,28 @@
-fadeWindowValue = 500;
+var fadeWindowValue = 500;
+var navBarHeight = 64;
 
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	loadSideBarDynamically();
-	$('#about')[0].click();
-	//$('#projects')[0].click();
+	$('.scrollspy').scrollSpy();
+	$('#doorlock')[0].click();
+	// $("html,body").animate({scrollTop: 0}, 1000);
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 30) {
+    // $('.nav-wrapper').velocity({
+    // 	backgroundColor: "#000000", 
+    // 	backgroundColorAlpha: "1"
+    // });
+	$('.nav-wrapper').css("background-color", "#4CAF50");
+  } else {
+
+  		// $('.nav-wrapper').velocity({
+  		// 	backgroundColorAlpha: "0"
+  		// });
+  	$('.nav-wrapper').css("background-color", "transparent");
+  }
 });
 
 //makes all elements including picture on main page load at once
@@ -20,10 +38,20 @@ $(window).on('load', function() {
 // tab onclick listeners
 $('ul#tabs li').click(function() 
 { 
-	removeActives();
-	setAsActive('#'+this.id);
-	window.scrollTo(0, 0);
+	//setAsActive('#'+this.id);
+	//set sidebar activated
+	$('#' + this.id + '_sidebar').addClass("active");
+	var clickedId = this.id;
+	var index = this.id.indexOf("-");
+	console.log(index + " " + this.id.substring(0, index));
+
+	var section = $("#" + this.id.substring(0, index));
+	// $('html, body').animate({
+ //        scrollTop: section.offset().top
+ //    }, 2000);
+	$('html, body').velocity("scroll",  { duration: 500, offset: section.offset().top - navBarHeight, easing: "ease-out"})
 });
+
 
 /* Handle sidebar clicks, instead of individual ones, it simply gets the id of the tab button
     from the sidebar item class, then sends a click to the button */
@@ -60,25 +88,10 @@ function removeActives()
 
 function setAsActive(id)
 {
+	removeActives();
 	$(id).addClass("active");
-	$(id + '_sidebar').addClass("active");
-	//strip the # fom the id
-	var fileName = id.substr(1, id.length-1) + '.html';
-
-	//keep main container height before executing
-	//$("#main_container").css("height",$("#main_container").height);
-
-	//method 2
-	$('#main_container').css('opacity', '0');
-	$("#main_container").load(fileName, function(){
-		$("#main_container").velocity({ opacity: 1 }, 200);
-		// $("#main_container").css("height","auto");
-		// //if it is the project tab, click first to load it
-		if(fileName === 'projects.html')
-		{
-			$('#doorlock')[0].click();
-		}
-	});
+	
+	
 
 	//method 1
 	// $('#main_container').fadeOut('fast', function(){
