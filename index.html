@@ -6,8 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<!--Import jQuery before materialize.js-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 <title>Han Li</title>
 <head>
 	<!--Import materialize.css-->
@@ -15,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="css/index.css"/>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -42,12 +41,10 @@
 	
 	
 	<main>
-
-		
-
 		<div class="parallax-container">
-			<div class="parallax"><img src="../img/night-city.jpg"></div>
-			<div> <!-- screen-section, to expand to fill-->
+			<div class="parallax"><img src="../img/night-city.jpg">
+			</div>
+			<div class=""> <!-- screen-section, to expand to fill-->
 				<header>
 					<div class="navbar-fixed">
 						<nav class="z-depth-0"> <!--light-blue darken-4-->
@@ -70,17 +67,19 @@
 			<!-- <div style="margin-top: 20px;">
 				spacer between navigation bar and main sections
 			</div> -->
-			<!--style="height: 80%;" to "center" in top section-->
-			<div class="valign-wrapper" >
+			<!--style="height: 100%;" to "center" in top section-->
+			<div class="valign-wrapper">
 				<div id="about" class="container scrollspy valign">
 					<div class="row">
-						<div class="col s12 m10 offset-m1">
+						<div class="col s12 m8 offset-m2">
 							<div class="card-panel">
 								<div class="row center-align" style="margin-top:0px; margin-bottom:0px;">
 									<div>
 										<img style="height:200px; width:200px;" class="circle center z-depth-2" src="img/profile.jpg">
 										<h3>Student - Software Developer</h3>
 										<p>Android and Backend Development</p>
+<!--										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+
 									</div>
 								</div>
 							</div>
@@ -91,68 +90,66 @@
 		</div>
 
 		<!-- side bar -->
-		<ul class="side-nav" id="sidebar" style="padding-left:0px;">
-		</ul>
+		<ul class="side-nav" id="sidebar" style="padding-left:0px;"></ul>
 	</div>
 
 
 	<div id="education" class="section-2 screen-section valign-wrapper scrollspy">
 		<div class="container valign">
 			<div class="row">
-				<div class="col s12 m6">
-					<div class="cl s12 m6">
-						<div class="card medium">
-							<div class="card-image">
-								<img id="cornell" src="img/cornell.jpg">
-								<span class="card-title"></span>
-							</div>
-							<div class="card-content">
-								<p>Class of 2018, Bachelor of Science</p>
-								<p>I'm currently a sophomore at <a class="school-link" href="https://www.cornell.edu/" target="_blank">Cornell University</a> studying Electrical and Computer Engineering
-									with a double major in Computer Science.</p>
-								</div>
-							</div>
+				<div class="col s12 m6 l4 offset-l2">
+					<div class="card medium">
+						<div class="card-image">
+							<img id="cornell" src="img/cornell.jpg">
+							<span class="card-title"></span>
 						</div>
-						<div class="card medium">
-							<div class="card-image">
-								<img id="west" src="img/planowest.jpg">
-								<span class="card-title"></span>
-							</div>
-							<div class="card-content">
-								<p>Class of 2014, High School Diploma</p>
-								<p>Previously I studied at <a class="school-link" href="http://k-12.pisd.edu/schools/pwsh/" target="_blank">Plano West Senior High School</a> in Plano, TX.</p>
-							</div>
+						<div class="card-content">
+							<p>Class of 2018, Bachelor of Science</p>
+							<p>I'm currently a sophomore at <a class="school-link" href="https://www.cornell.edu/" target="_blank">Cornell University</a> studying Electrical and Computer Engineering
+								with a double major in Computer Science.
+							</p>
 						</div>
 					</div>
-
-					<div class="col s12 m6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">Relevant Coursework (CS)</span>
-								<ul>
-									<li>CS 2112 - Honors Object Oriented Programming</li>
-									<li>CS 2043 - Unix Scripting and Tools</li>
-									<li>CS 2800 - Discrete Structures</li>
-									<li>CS 4820 - Introduction to Algorithms</li>
-								</ul>
-							</div>
+					<div class="card medium">
+						<div class="card-image">
+							<img id="west" src="img/planowest.jpg">
+							<span class="card-title"></span>
 						</div>
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title black-text">Relevant Coursework (ECE)</span>
-								<ul>
-									<li>ECE 1820 - Introduction to Nanofabrication</li>
-									<li>ECE 2100 - Introduction to Circuits</li>
-									<li>ECE 2200 - Signals and Systems</li>
-									<li>ECE 2300 - Digital Logic and Computer Organization (TA)</li>
-									<li>ECE 3100 - Probability and Statistics</li>
-									<li>ECE 3140 - Embedded Systems</li>
-									<li>ECE 3150 - Introduction to Microelectronics</li>
-								</ul>
-							</div>
+						<div class="card-content">
+							<p>Class of 2014, High School Diploma</p>
+							<p>Previously I studied at <a class="school-link" href="http://k-12.pisd.edu/schools/pwsh/" target="_blank">Plano West Senior High School</a> in Plano, TX.</p>
 						</div>
 					</div>
 				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">Relevant Coursework (CS)</span>
+							<ul>
+								<li>CS 2112 - Honors Object Oriented Programming</li>
+								<li>CS 2043 - Unix Scripting and Tools</li>
+								<li>CS 2800 - Discrete Structures</li>
+								<li>CS 4820 - Introduction to Algorithms</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title black-text">Relevant Coursework (ECE)</span>
+							<ul>
+								<li>ECE 1820 - Introduction to Nanofabrication</li>
+								<li>ECE 2100 - Introduction to Circuits</li>
+								<li>ECE 2200 - Signals and Systems</li>
+								<li>ECE 2300 - Digital Logic and Computer Organization (TA)</li>
+								<li>ECE 3100 - Probability and Statistics</li>
+								<li>ECE 3140 - Embedded Systems</li>
+								<li>ECE 3150 - Introduction to Microelectronics</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				
 			</div>
 		</div>
 	</div>
@@ -160,7 +157,7 @@
 	<div id="experience" class="section-3 screen-section valign-wrapper scrollspy">
 		<div  class="container valign">
 			<div class="row">
-				<div class="col s12 m8">
+				<div class="col s12 m8 l6 offset-l2">
 					<div class="card">
 						<div class="card-content">
 							<span class="card-title black-text">ECE 2300 Digital Logic and Computer Organization</span>
@@ -205,7 +202,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m4">
+				<div class="col s12 m4 l2">
 					<div class="card">
 						<div class="card-content">
 							<span class="card-title black-text">Languages</span>
@@ -229,8 +226,6 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="col s12 m4">
 					<div class="card">
 						<div class="card-content">
 							<span class="card-title black-text">Technologies</span>
@@ -253,7 +248,7 @@
 	<div id="projects" class="section-4 screen-section valign-wrapper scrollspy">
 		<div class="container valign">
 			<div class="row">
-				<div class="col s12 m4">
+				<div class="col s12 m4 l3 offset-l2">
 					<div class="z-depth-1">
 						<div id="project-collection" class="collection">
 							<a id="doorlock" href="#Password-protected Doorlock" class="project-item collection-item green white-text">Password-protected Doorlock</a>
@@ -264,7 +259,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="project-display-container" class="col s12 m8" style="height: 500px; display: block;">
+				<div id="project-display-container" class="col s12 m8 l5" style="min-height: 50%; display: block;">
 				</div>
 			</div> 
 		</div>
@@ -275,38 +270,27 @@
 	<div id="contact" class="section-5 screen-section valign-wrapper scrollspy">
 		<div class="container valign">
 			<div class="row">
-				<div class="col s12 m10 offset-m1">
-					<div class="card">
-						<div class="card-content">
-							<p>Feel free to send me an email or check out some of the links!</p>
-							<form>
-								<div class="row">
-									<div class="input-field col s12">
-										<input id="subject" type="text" class="validate"></input>
-										<label for="subject">Subject</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="input-field col s12">
-										<textarea id="message" class="materialize-textarea"></textarea>
-										<label for="message">Message</label>
-									</div>
-								</div>
-							</form>
-							<button class="btn-large waves-effect waves-light green" type="submit" name="action"
-							id="send">Send
-						</button>
-					</div>
+				<div class="col s12 m10 l8 offset-m1 offset-l2">
+					<p class="end-text">Thanks for stopping by! Feel free to contact me or go back and check out some other links.</p>
+					<form>
+						<div class="row">
+                                <textarea id="subject" placeholder="Subject" class="non-resizable-textarea"></textarea>
+						</div>
+						<div class="row">
+                                <textarea id="message" placeholder="Message"></textarea>
+						</div>
+					</form>
+					<button class="btn-large waves-effect waves-light center green send-button" type="submit" name="action"
+					id="send" style="width:100%">Send</button>
 				</div>
 			</div>
 		</div>    
 	</div>
 
 
-</div>
-
 </main>
-
+<!--Import jQuery before materialize.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/libs/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/projects.js"></script>

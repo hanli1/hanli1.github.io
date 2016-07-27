@@ -1,3 +1,4 @@
+/* color primary: 4CAF50 */
 body {
 	display: flex;
 	min-height: 100vh;
@@ -245,3 +246,55 @@ ul li{
 .linkedin span{
 	background-color: #0077B5;
 }
+
+.end-text{
+	font-size: 200%;
+	color: black;
+	text-align: center;
+	font-weight: 1;
+}
+
+textarea{
+    height: 200px;
+    color:black;
+    background-color: white;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 150%;
+    padding: 10px;
+    margin: 0px;
+    
+    
+    border: none;
+    outline: none;
+
+    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
+    
+}
+textarea:focus{
+    outline: none; 
+    
+}
+
+.non-resizable-textarea{
+    resize: none;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+
+.send-button{
+    border-radius: 100px;
+    max-width: 50%;
+/*    background-color: #4CAF50;*/
+}
+/*
+
+.send-button:hover, .send-button:active{
+    background-color: #4CAF50;
+}
+*/
+
+
+

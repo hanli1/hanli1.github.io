@@ -18,13 +18,15 @@ $(window).scroll(function() {
     // 	backgroundColor: "#000000", 
     // 	backgroundColorAlpha: "1"
     // });
-	$('.nav-wrapper').css("background-color", "#4CAF50");
+	$('nav').css("background-color", "#4CAF50");
+	$('nav').removeClass("z-depth-0");
   } else {
 
   		// $('.nav-wrapper').velocity({
   		// 	backgroundColorAlpha: "0"
   		// });
-  	$('.nav-wrapper').css("background-color", "transparent");
+  	$('nav').css("background-color", "transparent");
+	$('nav').addClass("z-depth-0");
   }
 });
 
@@ -119,10 +121,26 @@ $('#send').click(function(){
 
 function launchEmail()
 {
+    var subject = $("#subject").val();
+    var message = $("#message").val();
+    if(subject.trim().length == 0 && message.trim().length == 0){
+        Materialize.toast('There is no text', 1000, 'rounded')
+//        $("#send").velocity({
+//            backgroundColor: "#FF0000"
+//        }, {
+//            duration: 500,
+//            complete: function(elements){
+//                    $("#send").velocity("reverse", {
+//                    duration: 500,
+//                });
+//            }
+//        });
+        return;
+    }
 	var url = "mailto:dragon1357531@gmail.com?subject=";
-	url+= $("#subject").val().replace(" ", "+");
+	url+= subject.replace(" ", "+");
 	url+= "&body="
-	url+= $("#message").val().replace(" ", "+");
+	url+= message.replace(" ", "+");
 	window.open(
 		url,
           '_blank' // <- This is what makes it open in a new window.
