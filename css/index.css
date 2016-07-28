@@ -270,9 +270,7 @@ textarea{
     border: none;
     outline: none;
 
-    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
-    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
-    box-shadow: inset 2px 2px 2px 0px #dddddd;
+    
     
 }
 textarea:focus{
@@ -298,6 +296,8 @@ textarea:focus{
     background-color: #4CAF50;
 }
 */
-
+.chip{
+    margin: 5px;
+}
 
 
