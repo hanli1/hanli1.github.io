@@ -262,20 +262,36 @@ textarea{
     color:black;
     background-color: white;
     font-family: "Roboto", "Arial", sans-serif;
-    font-size: 150%;
-    padding: 10px;
+    font-size: 125%;
+    padding: 12px;
     margin: 0px;
     
-    
-    border: none;
-    outline: none;
-
+    border: 1px solid #999;
+    border-radius: 2px;
+    /*outline: none;*/
+    resize: vertical;
     
     
 }
 textarea:focus{
-    outline: none; 
-    
+    outline: none;
+    border: 1px solid #4CAF50; 
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
 }
 
 .non-resizable-textarea{
