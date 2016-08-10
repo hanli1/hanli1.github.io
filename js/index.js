@@ -39,6 +39,17 @@ $(window).on('load', function() {
 	$("#cover").fadeOut(500);
 });
 
+$('i').click(function(){
+    console.log("here");
+    var id = this.id;
+    if(id === "github-icon")
+        window.open("https://github.com/hanli1").focus();
+    else if(id === "linkedin-icon")
+        window.open("https://linkedin.com/in/hanli3").focus();
+    else
+        Materialize.toast('Currently Not Linked', 1000, 'rounded')
+
+});
 
 // tab onclick listeners
 $('ul#tabs li').click(function() 

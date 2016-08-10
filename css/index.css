@@ -3,6 +3,8 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 a.anchor{
 	display: block; 
@@ -306,14 +308,26 @@ textarea:focus{
     max-width: 50%;
 /*    background-color: #4CAF50;*/
 }
-/*
-
-.send-button:hover, .send-button:active{
-    background-color: #4CAF50;
-}
-*/
 .chip{
     margin: 5px;
 }
 
+.social{
+  background: #4CAF50;
 
+  margin: 5px -20px -20px -20px;
+  border-radius: 0px 0px 2px 2px;
+  padding: 20px;
+}
+i{
+  color: white;
+  margin: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+#main-name{
+  font-weight: 300;
+}
+#main-blurb{
+  font-weight: 300;
+  color: gray;
+}
