@@ -46,6 +46,10 @@ $('i').click(function(){
         window.open("https://github.com/hanli1").focus();
     else if(id === "linkedin-icon")
         window.open("https://linkedin.com/in/hanli3").focus();
+    else if (id === "")
+    {
+    	//do nothing for the i click of the sidebar 
+    }
     else
         Materialize.toast('Currently Not Linked', 1000, 'rounded')
 
@@ -73,9 +77,15 @@ $('ul#tabs li').click(function()
     from the sidebar item class, then sends a click to the button */
 $('#sidebar').on('click','li',function(e){
     id = $(this).attr('id');
-    $('#'+ id.substr(0, id.length - 8)).click();
+    actualId = id.substr(0, id.length - 8)
+    $('#'+ actualId).click();
     e.preventDefault();
     $('.button-collapse').sideNav('hide');
+
+    $('#sidebar').children('li').each(function () {
+    	if($(this).attr('id') != id)
+			$(this).removeClass("active");
+	});
 });
 
 
