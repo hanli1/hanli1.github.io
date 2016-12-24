@@ -143,7 +143,13 @@ ul li{
 	min-height: 100%;
 }
 
-
+.hero-img{
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	background-color: #F2F2F2;
+}
 /* section background colors increasing in darkness */
 .section-1{
 	background-color: #FAFAFA;
