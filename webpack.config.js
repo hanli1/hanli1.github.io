@@ -21,6 +21,9 @@ var config = {
       },
     ],
   },
+  devServer: {
+    overlay: true
+  },
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
