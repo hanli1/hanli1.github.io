@@ -4,7 +4,8 @@
   "description": "The website takes inspiration from Google's material design guidelines and is built with JQuery with some raw Javascript, and MaterializeCSS as the frontend framework. It does not use any other javascript frameworks.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
     "babel-preset-react": "^6.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack": "^3.3.0"
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.1"
   },
   "devDependencies": {
     "babel-loader": "^7.1.1",

@@ -13,7 +13,7 @@ var config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ["babel-loader"],
+        loaders: ["react-hot-loader", "babel-loader"],
       },
       {
         test: /\.html$/,
@@ -23,7 +23,8 @@ var config = {
   },
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: 'build/',
   }
 };
 
